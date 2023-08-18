@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 100vh;
+}
+body{
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.robot{
+  pointer-events: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+.robot img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(105%, -330%);
+}
+button{
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  color: #316B52;
+  background-color: #FFD619;
+  font-family: 'Wallpoet', cursive;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+  filter: brightness(95%);
+}
+button:active{
+  transform: scale(0.98);
+}
+button:disabled{
+  cursor: default;
+  filter: brightness(30%);
+}
+.jsgif{
+  max-width: 100%;
+}
+canvas{
+  max-width: 100%;
+  height: auto;
+}
+/* Media Query: Tablet or Smaller*/
+@media screen and (max-width: 1000px){
+
+}
